@@ -11,8 +11,8 @@ import Foundation
 
 class TripModel {
     
-    var id: String
-    var tripTitle: String
+    var id: String!
+    var tripTitle: String!
     
     init(tripTitle: String) {
         id = UUID().uuidString
