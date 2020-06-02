@@ -37,6 +37,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B668BB5A2486E50E009D033E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B668BB5B2486E519009D033E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6F002472486074F00A9A85D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B668BB5C2486E522009D033E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B668BB5D2486E5D6009D033E /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				B6F002432486074F00A9A85D /* AppDelegate.swift */,
+				B6F002452486074F00A9A85D /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
 		B6F002372486074E00A9A85D = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +87,10 @@
 		B6F002422486074F00A9A85D /* TripPlanningApp */ = {
 			isa = PBXGroup;
 			children = (
-				B6F002432486074F00A9A85D /* AppDelegate.swift */,
-				B6F002452486074F00A9A85D /* SceneDelegate.swift */,
-				B6F002472486074F00A9A85D /* ViewController.swift */,
+				B668BB5D2486E5D6009D033E /* AppDelegates */,
+				B668BB5C2486E522009D033E /* Model */,
+				B668BB5B2486E519009D033E /* Controllers */,
+				B668BB5A2486E50E009D033E /* Views */,
 				B6F002492486074F00A9A85D /* Main.storyboard */,
 				B6F0024C2486075200A9A85D /* Assets.xcassets */,
 				B6F0024E2486075200A9A85D /* LaunchScreen.storyboard */,
