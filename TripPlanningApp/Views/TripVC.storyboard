@@ -54,17 +54,28 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTS-kV-4kn">
+                                <rect key="frame" x="294" y="586" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="mVf-xl-V0W"/>
+                                    <constraint firstAttribute="width" constant="56" id="qpP-fT-URn"/>
+                                </constraints>
+                                <state key="normal" image="icons8-plus"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="KUD-Tn-3hX" firstAttribute="trailing" secondItem="2gd-ug-Tfu" secondAttribute="trailing" id="HmM-5S-G67"/>
-                            <constraint firstItem="KUD-Tn-3hX" firstAttribute="bottom" secondItem="2gd-ug-Tfu" secondAttribute="bottom" id="ZdS-Af-4eG"/>
-                            <constraint firstItem="KUD-Tn-3hX" firstAttribute="leading" secondItem="2gd-ug-Tfu" secondAttribute="leading" id="rjm-3y-ooA"/>
-                            <constraint firstItem="KUD-Tn-3hX" firstAttribute="top" secondItem="2gd-ug-Tfu" secondAttribute="top" id="syW-pj-OvL"/>
+                            <constraint firstItem="KUD-Tn-3hX" firstAttribute="trailing" secondItem="JvT-6r-YSQ" secondAttribute="trailing" id="HmM-5S-G67"/>
+                            <constraint firstItem="2gd-ug-Tfu" firstAttribute="bottom" secondItem="oTS-kV-4kn" secondAttribute="bottom" constant="25" id="O6l-j1-3Sj"/>
+                            <constraint firstItem="KUD-Tn-3hX" firstAttribute="bottom" secondItem="JvT-6r-YSQ" secondAttribute="bottom" id="ZdS-Af-4eG"/>
+                            <constraint firstItem="2gd-ug-Tfu" firstAttribute="trailing" secondItem="oTS-kV-4kn" secondAttribute="trailing" constant="25" id="jsP-AV-KJm"/>
+                            <constraint firstItem="KUD-Tn-3hX" firstAttribute="leading" secondItem="JvT-6r-YSQ" secondAttribute="leading" id="rjm-3y-ooA"/>
+                            <constraint firstItem="KUD-Tn-3hX" firstAttribute="top" secondItem="JvT-6r-YSQ" secondAttribute="top" id="syW-pj-OvL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2gd-ug-Tfu"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="oTS-kV-4kn" id="m1f-cS-0H6"/>
                         <outlet property="tripTableView" destination="KUD-Tn-3hX" id="ljR-9q-rhb"/>
                     </connections>
                 </viewController>
@@ -73,4 +84,7 @@
             <point key="canvasLocation" x="-39.200000000000003" y="103.89805097451276"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-plus" width="24" height="24"/>
+    </resources>
 </document>

@@ -11,14 +11,17 @@ import UIKit
 class TripViewController: UIViewController {
     
     @IBOutlet weak var tripTableView: UITableView!
+    @IBOutlet weak var addButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tripTableView.delegate = self
         tripTableView.dataSource = self
-        view.backgroundColor = Colors.backGroundColor 
-        TripFunctions.readTrips(completion: { [weak self] in
+        view.backgroundColor = Colors.backGroundColor
+        addButton.createFloatingButton()
+        
+            TripFunctions.readTrips(completion: { [weak self] in
             self?.tripTableView.reloadData()
         })
     }
