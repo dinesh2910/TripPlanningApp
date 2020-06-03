@@ -15,10 +15,7 @@ class TripTVCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        cardView.layer.shadowOffset = CGSize.zero
-        cardView.layer.shadowOpacity = 1
-        cardView.layer.shadowColor = UIColor.darkGray.cgColor
-        cardView.layer.cornerRadius = 10.0
+        cardView.addShadowAndCornorRadius()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

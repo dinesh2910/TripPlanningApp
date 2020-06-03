@@ -26,9 +26,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPF-z3-DiV">
-                                                    <rect key="frame" x="15" y="11" width="345" height="129"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPF-z3-DiV">
+                                                    <rect key="frame" x="15" y="11" width="345" height="138"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZ4-e9-ErP">
                                                             <rect key="frame" x="28" y="35" width="292" height="68"/>
@@ -41,9 +40,15 @@
                                                     <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="CPF-z3-DiV" secondAttribute="trailing" constant="15" id="G6h-Y1-AZL"/>
+                                                <constraint firstAttribute="bottom" secondItem="CPF-z3-DiV" secondAttribute="bottom" constant="11" id="W6a-3S-Xdz"/>
+                                                <constraint firstItem="CPF-z3-DiV" firstAttribute="leading" secondItem="Tia-wd-v4a" secondAttribute="leading" constant="15" id="sQd-tL-Rfc"/>
+                                                <constraint firstItem="CPF-z3-DiV" firstAttribute="top" secondItem="Tia-wd-v4a" secondAttribute="top" constant="11" id="t5T-YR-c3V"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="cardView" destination="Tia-wd-v4a" id="BoG-E6-HHq"/>
+                                            <outlet property="cardView" destination="CPF-z3-DiV" id="qtf-3y-ES7"/>
                                             <outlet property="tripTitleLabel" destination="mZ4-e9-ErP" id="zZn-O2-v4W"/>
                                         </connections>
                                     </tableViewCell>
