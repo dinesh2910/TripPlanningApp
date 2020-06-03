@@ -18,6 +18,8 @@
 		B668BB78248765FE009D033E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668BB77248765FE009D033E /* Fonts.swift */; };
 		B668BB7A24876720009D033E /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B668BB7924876720009D033E /* Color.xcassets */; };
 		B668BB7C24876F6F009D033E /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668BB7B24876F6F009D033E /* UIButtonExtension.swift */; };
+		B668BB802487744A009D033E /* AddTripVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B668BB7F2487744A009D033E /* AddTripVC.storyboard */; };
+		B668BB8224877469009D033E /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668BB8124877469009D033E /* AddTripViewController.swift */; };
 		B6F002442486074F00A9A85D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F002432486074F00A9A85D /* AppDelegate.swift */; };
 		B6F002462486074F00A9A85D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F002452486074F00A9A85D /* SceneDelegate.swift */; };
 		B6F0024D2486075200A9A85D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F0024C2486075200A9A85D /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 		B668BB77248765FE009D033E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		B668BB7924876720009D033E /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		B668BB7B24876F6F009D033E /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		B668BB7F2487744A009D033E /* AddTripVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddTripVC.storyboard; sourceTree = "<group>"; };
+		B668BB8124877469009D033E /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
 		B6F002402486074F00A9A85D /* TripPlanningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripPlanningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F002432486074F00A9A85D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F002452486074F00A9A85D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +62,8 @@
 		B668BB5A2486E50E009D033E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B668BB6624872AB3009D033E /* TripVC.storyboard */,
-				B668BB68248734C2009D033E /* TripTVCell.swift */,
+				B668BB7E248773A6009D033E /* StoryBoards */,
+				B668BB7D2487738D009D033E /* TableViewCells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -68,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				B668BB6424872A72009D033E /* TripViewController.swift */,
+				B668BB8124877469009D033E /* AddTripViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -116,6 +121,23 @@
 				B668BB7924876720009D033E /* Color.xcassets */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B668BB7D2487738D009D033E /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B668BB68248734C2009D033E /* TripTVCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		B668BB7E248773A6009D033E /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				B668BB6624872AB3009D033E /* TripVC.storyboard */,
+				B668BB7F2487744A009D033E /* AddTripVC.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 		B6F002372486074E00A9A85D = {
@@ -208,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B668BB802487744A009D033E /* AddTripVC.storyboard in Resources */,
 				B6F002502486075200A9A85D /* LaunchScreen.storyboard in Resources */,
 				B6F0024D2486075200A9A85D /* Assets.xcassets in Resources */,
 				B668BB7A24876720009D033E /* Color.xcassets in Resources */,
@@ -230,6 +253,7 @@
 				B668BB69248734C2009D033E /* TripTVCell.swift in Sources */,
 				B668BB6524872A72009D033E /* TripViewController.swift in Sources */,
 				B668BB5F2486ECEF009D033E /* TripModel.swift in Sources */,
+				B668BB8224877469009D033E /* AddTripViewController.swift in Sources */,
 				B668BB6D24876076009D033E /* UIViewExtension.swift in Sources */,
 				B668BB78248765FE009D033E /* Fonts.swift in Sources */,
 				B6F002462486074F00A9A85D /* SceneDelegate.swift in Sources */,
