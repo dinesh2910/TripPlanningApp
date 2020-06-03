@@ -1,0 +1,40 @@
+//
+//  TripViewController.swift
+//  TripPlanningApp
+//
+//  Created by Dinesh Danda on 6/2/20.
+//  Copyright © 2020 Dinesh Danda. All rights reserved.
+//
+
+import UIKit
+
+class TripViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
+    
+    @IBOutlet weak var tripTableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tripTableView.delegate = self
+        tripTableView.dataSource = self
+        
+        TripFunctions.readTrips(completion: { [weak self] in
+            self?.tripTableView.reloadData()
+        })
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Data.tripModels.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TripTVCell
+        cell.setUp(tripModel: Data.tripModels[indexPath.row])
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 160
+    }
+    
+}
