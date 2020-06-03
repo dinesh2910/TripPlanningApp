@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xy1-Yn-kwK">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xy1-Yn-kwK" customClass="PopUpView" customModule="TripPlanningApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="20" width="335" height="160"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Trip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwx-cq-qFM">
@@ -27,7 +27,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I67-b2-PCh">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Trip Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I67-b2-PCh">
                                         <rect key="frame" x="16" y="54" width="303" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="SFV-vb-VRZ"/>
@@ -35,16 +35,30 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO5-9c-3HE">
-                                        <rect key="frame" x="16" y="120" width="48" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO5-9c-3HE" customClass="PopUpButton" customModule="TripPlanningApp" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="110" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="C47-HR-829"/>
+                                            <constraint firstAttribute="width" constant="100" id="scf-PO-xw4"/>
+                                        </constraints>
                                         <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="didPressCancelButton:" destination="HuG-Jl-BTy" eventType="touchUpInside" id="sbT-ir-dtX"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HR-lA-PsK">
-                                        <rect key="frame" x="285" y="120" width="34" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HR-lA-PsK" customClass="PopUpButton" customModule="TripPlanningApp" customModuleProvider="target">
+                                        <rect key="frame" x="219" y="110" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="EqC-9d-Tcn"/>
+                                            <constraint firstAttribute="height" constant="40" id="tX0-oc-lN6"/>
+                                        </constraints>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="didPressSaveButton:" destination="HuG-Jl-BTy" eventType="touchUpInside" id="CU1-rD-214"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="I67-b2-PCh" secondAttribute="trailing" constant="16" id="0Az-PS-n2b"/>
                                     <constraint firstItem="uwx-cq-qFM" firstAttribute="leading" secondItem="xy1-Yn-kwK" secondAttribute="leading" constant="16" id="Fin-KX-mwQ"/>
@@ -62,12 +76,19 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xy1-Yn-kwK" firstAttribute="top" secondItem="bax-Yp-Tif" secondAttribute="top" constant="20" id="18r-qd-I3o"/>
+                            <constraint firstItem="xy1-Yn-kwK" firstAttribute="top" secondItem="c8g-xq-Xlp" secondAttribute="top" constant="20" id="18r-qd-I3o"/>
                             <constraint firstItem="xy1-Yn-kwK" firstAttribute="leading" secondItem="bax-Yp-Tif" secondAttribute="leading" constant="20" id="Cd5-BB-kll"/>
                             <constraint firstAttribute="trailing" secondItem="xy1-Yn-kwK" secondAttribute="trailing" constant="20" id="Lne-8e-M11"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c8g-xq-Xlp"/>
                     </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="DO5-9c-3HE" id="rG1-bn-eiu"/>
+                        <outlet property="popUpView" destination="xy1-Yn-kwK" id="m5e-Ku-gbf"/>
+                        <outlet property="saveButton" destination="9HR-lA-PsK" id="7fn-Ex-Rmr"/>
+                        <outlet property="titleLabel" destination="uwx-cq-qFM" id="Sdc-ig-0P7"/>
+                        <outlet property="tripTextField" destination="I67-b2-PCh" id="SRG-LC-4JH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EKl-x5-52X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

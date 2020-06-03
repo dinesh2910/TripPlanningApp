@@ -16,7 +16,7 @@ class Fonts {
 
 class Colors {
     
-    static let backGroundColor = UIColor(named: "BackGround")
+    static let backGroundColor = UIColor(named: "Background")
     static let tintColor = UIColor(named: "Accent")
     static let accentColor = UIColor(named: "Tint")
 
