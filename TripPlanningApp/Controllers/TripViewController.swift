@@ -26,6 +26,14 @@ class TripViewController: UIViewController {
         })
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == SegueConstans.TO_AddTrip_VC {
+            let popUp = segue.destination as! AddTripViewController
+            popUp.doneSaving = { [weak self] in
+                self?.tripTableView.reloadData()
+            }
+        }
+    }
 }
 
 extension TripViewController: UITableViewDelegate, UITableViewDataSource {

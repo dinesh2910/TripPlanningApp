@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B6370FCC248795CF0082DC77 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6370FCB248795CF0082DC77 /* PopUpView.swift */; };
 		B6370FCE2487986C0082DC77 /* PopUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6370FCD2487986C0082DC77 /* PopUpButton.swift */; };
+		B6370FD124879C4A0082DC77 /* SegueConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6370FD024879C4A0082DC77 /* SegueConstants.swift */; };
 		B668BB5F2486ECEF009D033E /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668BB5E2486ECEF009D033E /* TripModel.swift */; };
 		B668BB612486ECFD009D033E /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668BB602486ECFD009D033E /* TripFunctions.swift */; };
 		B668BB632486F314009D033E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668BB622486F314009D033E /* Data.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		B6370FCB248795CF0082DC77 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
 		B6370FCD2487986C0082DC77 /* PopUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpButton.swift; sourceTree = "<group>"; };
+		B6370FD024879C4A0082DC77 /* SegueConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueConstants.swift; sourceTree = "<group>"; };
 		B668BB5E2486ECEF009D033E /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		B668BB602486ECFD009D033E /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 		B668BB622486F314009D033E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 				B6370FCD2487986C0082DC77 /* PopUpButton.swift */,
 			);
 			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		B6370FCF24879C2C0082DC77 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B6370FD024879C4A0082DC77 /* SegueConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		B668BB5A2486E50E009D033E /* Views */ = {
@@ -173,6 +183,7 @@
 		B6F002422486074F00A9A85D /* TripPlanningApp */ = {
 			isa = PBXGroup;
 			children = (
+				B6370FCF24879C2C0082DC77 /* Constants */,
 				B668BB6F248763A7009D033E /* SupportingFiles */,
 				B668BB6B24876059009D033E /* Extensions */,
 				B668BB5D2486E5D6009D033E /* AppDelegates */,
@@ -267,6 +278,7 @@
 				B668BB69248734C2009D033E /* TripTVCell.swift in Sources */,
 				B668BB6524872A72009D033E /* TripViewController.swift in Sources */,
 				B668BB5F2486ECEF009D033E /* TripModel.swift in Sources */,
+				B6370FD124879C4A0082DC77 /* SegueConstants.swift in Sources */,
 				B668BB8224877469009D033E /* AddTripViewController.swift in Sources */,
 				B668BB6D24876076009D033E /* UIViewExtension.swift in Sources */,
 				B6370FCE2487986C0082DC77 /* PopUpButton.swift in Sources */,

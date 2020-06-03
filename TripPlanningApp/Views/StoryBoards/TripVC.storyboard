@@ -62,7 +62,7 @@
                                 </constraints>
                                 <state key="normal" image="icons8-plus"/>
                                 <connections>
-                                    <segue destination="iGG-Js-BYP" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="M1D-1Q-0TS"/>
+                                    <segue destination="iGG-Js-BYP" kind="presentation" identifier="toAddTripSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="M1D-1Q-0TS"/>
                                 </connections>
                             </button>
                         </subviews>
