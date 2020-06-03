@@ -17,7 +17,7 @@ class TripViewController: UIViewController {
         
         tripTableView.delegate = self
         tripTableView.dataSource = self
-        
+        view.backgroundColor = Colors.backGroundColor 
         TripFunctions.readTrips(completion: { [weak self] in
             self?.tripTableView.reloadData()
         })
