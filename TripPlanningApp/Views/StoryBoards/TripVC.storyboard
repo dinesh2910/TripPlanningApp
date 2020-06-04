@@ -15,11 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KUD-Tn-3hX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KUD-Tn-3hX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="jeo-fN-TL3">
+                                    <rect key="frame" x="0.0" y="216" width="375" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="160" id="G4u-5d-L8c" customClass="TripTVCell" customModule="TripPlanningApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="160" id="G4u-5d-L8c" customClass="TripTVCell" customModule="TripPlanningApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G4u-5d-L8c" id="Tia-wd-v4a">
@@ -29,6 +34,9 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPF-z3-DiV">
                                                     <rect key="frame" x="15" y="11" width="345" height="138"/>
                                                     <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Xh-Oh-4nJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="138"/>
+                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZ4-e9-ErP">
                                                             <rect key="frame" x="28" y="35" width="292" height="68"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -38,6 +46,12 @@
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="7Xh-Oh-4nJ" firstAttribute="top" secondItem="CPF-z3-DiV" secondAttribute="top" id="1UF-G7-V0h"/>
+                                                        <constraint firstAttribute="trailing" secondItem="7Xh-Oh-4nJ" secondAttribute="trailing" id="6KV-QU-4AT"/>
+                                                        <constraint firstAttribute="bottom" secondItem="7Xh-Oh-4nJ" secondAttribute="bottom" id="Jxz-AH-RV0"/>
+                                                        <constraint firstItem="7Xh-Oh-4nJ" firstAttribute="leading" secondItem="CPF-z3-DiV" secondAttribute="leading" id="NyB-7d-rtC"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -49,6 +63,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="cardView" destination="CPF-z3-DiV" id="qtf-3y-ES7"/>
+                                            <outlet property="tripImage" destination="7Xh-Oh-4nJ" id="MYQ-2X-hOZ"/>
                                             <outlet property="tripTitleLabel" destination="mZ4-e9-ErP" id="zZn-O2-v4W"/>
                                         </connections>
                                     </tableViewCell>

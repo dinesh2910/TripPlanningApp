@@ -6,16 +6,18 @@
 //  Copyright © 2020 Dinesh Danda. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 
 class TripModel {
     
     let id: UUID
     var tripTitle: String
+    var tripImage: UIImage?
     
-    init(tripTitle: String) {
+    init(tripTitle: String, tripImage: UIImage? = nil) {
         id = UUID()
         self.tripTitle = tripTitle
+        self.tripImage = tripImage
     }
 }
