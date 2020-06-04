@@ -19,4 +19,5 @@ class Constatns {
     static let photoLibDenied = "Photo Library Denied"
     static let photoLibDeniedDescription = "Access to Photo Library Has been Denied, goto Setting"
     static let cancel = "Cancel"
+    static let edit = "Edit"
 }
