@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6284DAA2488947000B4EF8E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6284DA92488947000B4EF8E /* Constants.swift */; };
 		B6370FCC248795CF0082DC77 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6370FCB248795CF0082DC77 /* PopUpView.swift */; };
 		B6370FCE2487986C0082DC77 /* PopUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6370FCD2487986C0082DC77 /* PopUpButton.swift */; };
 		B6370FD124879C4A0082DC77 /* SegueConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6370FD024879C4A0082DC77 /* SegueConstants.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6284DA92488947000B4EF8E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B6370FCB248795CF0082DC77 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
 		B6370FCD2487986C0082DC77 /* PopUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpButton.swift; sourceTree = "<group>"; };
 		B6370FD024879C4A0082DC77 /* SegueConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueConstants.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				B6370FD024879C4A0082DC77 /* SegueConstants.swift */,
+				B6284DA92488947000B4EF8E /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				B668BB612486ECFD009D033E /* TripFunctions.swift in Sources */,
 				B6F002442486074F00A9A85D /* AppDelegate.swift in Sources */,
 				B668BB69248734C2009D033E /* TripTVCell.swift in Sources */,
+				B6284DAA2488947000B4EF8E /* Constants.swift in Sources */,
 				B668BB6524872A72009D033E /* TripViewController.swift in Sources */,
 				B668BB5F2486ECEF009D033E /* TripModel.swift in Sources */,
 				B6370FD124879C4A0082DC77 /* SegueConstants.swift in Sources */,

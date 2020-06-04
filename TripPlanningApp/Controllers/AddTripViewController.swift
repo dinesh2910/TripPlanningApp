@@ -70,20 +70,20 @@ class AddTripViewController: UIViewController {
                 case .notDetermined:
                     self.presentPhotoPickerController()
                 case .restricted:
-                    let alert = UIAlertController(title: "Photo Library Restricted", message: "Access to Photo Library Has been restricted", preferredStyle: .alert)
-                    let okAction = UIAlertAction(title: "Ok", style: .default)
+                    let alert = UIAlertController(title: Constatns.photoLibraryRestriction, message: Constatns.restrictedMessage, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: Constatns.ok, style: .default)
                     alert.addAction(okAction)
                     self.present(alert, animated: true, completion: nil)
                 case .denied:
-                    let alert = UIAlertController(title: "Photo Library Denied", message: "Access to Photo Library Has been Denied, goto Setting", preferredStyle: .alert)
-                    let gotoSettingsAction = UIAlertAction(title: "Ok", style: .default) { (action) in
+                    let alert = UIAlertController(title: Constatns.photoLibDenied, message: Constatns.photoLibDeniedDescription , preferredStyle: .alert)
+                    let gotoSettingsAction = UIAlertAction(title: Constatns.ok, style: .default) { (action) in
                         DispatchQueue.main.async {
                             if let url = URL(string: UIApplication.openSettingsURLString) {
                                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
                             }
                         }
                     }
-                        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                    let cancelAction = UIAlertAction(title: Constatns.cancel, style: .cancel, handler: nil)
                         alert.addAction(gotoSettingsAction)
                         alert.addAction(cancelAction)
                         self.present(alert, animated: true, completion: nil)
